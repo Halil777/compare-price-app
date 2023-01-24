@@ -103,6 +103,7 @@ const Navbar = () => {
                 return (
                   <Link
                     to={item.link}
+                    key={`link_${i}`}
                     style={{
                       textDecoration:
                         item.link === location.pathname ? "underline" : "none",
