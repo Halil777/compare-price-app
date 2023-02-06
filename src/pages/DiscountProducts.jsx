@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   Box,
   Card,
@@ -13,8 +13,10 @@ import {
 } from "@mui/material";
 import { aksiyaYnamdar } from "../data/aksiyaYnamdar.mjs";
 import Marquee from "react-fast-marquee";
+// import { aksiya100Haryt } from "../data/aksiya100Haryt.mjs";
 
 let aksiyaData = aksiyaYnamdar.result.products;
+// let aksiyaData100Haryt = aksiya100Haryt.data.rows;
 
 const backgroundStyle = {
   background: "lightGray",
@@ -23,9 +25,9 @@ const backgroundStyle = {
 };
 
 const words = [
-  " Aksiyada duran harytlar",
-  "Merchandise on sale",
-  "Товар в продаже",
+  " Aksiyada duran harytlar Ynamdar",
+  "Merchandise on sale Ynamdar",
+  "Товар в продаже Ynamdar",
 ];
 
 const DiscountProducts = () => {
@@ -96,6 +98,69 @@ const DiscountProducts = () => {
               })}
             </Grid>
           </Box>
+          {/* <Box pt={5} pb={5}>
+            <Stack direction="row" pb={3} justifyContent={"center"}>
+              <Marquee speed={40}>
+                {words.map((item, i) => {
+                  return (
+                    <Typography
+                      key={`marque_key${i}`}
+                      variant="h3"
+                      sx={{ color: "#EC6323", paddingLeft: "200px" }}
+                    >
+                      {item}
+                    </Typography>
+                  );
+                })}
+              </Marquee>
+            </Stack>
+            <Grid container spacing={2}>
+              {aksiyaData100Haryt.map((item, i) => {
+                return (
+                  <Grid item sm={3} key={`aksiya_ynamdar_data_key${i}`}>
+                    <Card>
+                      <CardActionArea>
+                        <CardMedia
+                          component="img"
+                          height="240"
+                          image={item.p_image}
+                          alt="green iguana"
+                        />
+                        <CardContent>
+                          <Stack spacing={1}>
+                            <Tooltip title={item.name.tm}>
+                              <Typography>
+                                {item.p_name_tm.slice(0, 20)}...
+                              </Typography>
+                            </Tooltip>
+                            <Stack
+                              direction="row"
+                              spacing={2}
+                              alignItems="center"
+                            >
+                              <Typography sx={{ color: "#EC6323" }}>
+                                {item["sale-price"] / 100}
+                              </Typography>
+                              <Typography
+                                sx={{
+                                  textDecoration: "line-through",
+                                  color: "gray",
+                                }}
+                              >
+                                {item["old-price"] === item["sale-price"]
+                                  ? ""
+                                  : item["old-price"] / 100}
+                              </Typography>
+                            </Stack>
+                          </Stack>
+                        </CardContent>
+                      </CardActionArea>
+                    </Card>
+                  </Grid>
+                );
+              })}
+            </Grid>
+          </Box> */}
         </Container>
       </Box>
     </>

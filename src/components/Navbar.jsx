@@ -10,7 +10,7 @@ import Tooltip from "@mui/material/Tooltip";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
 import { styled, alpha } from "@mui/material/styles";
-import { FormControl, Stack, Typography } from "@mui/material";
+import { FormControl, Stack } from "@mui/material";
 import { Link, useLocation } from "react-router-dom";
 import { dataLink } from "../data/dataLink.mjs";
 import { logo } from "../style/style.mjs";
