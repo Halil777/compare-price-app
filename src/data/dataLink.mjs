@@ -12,7 +12,7 @@ export const dataLink = [
   {
     id: 2,
     link: "/chocolate",
-    title: "chocolate ",
+    title: "choco ",
   },
   {
     id: 3,

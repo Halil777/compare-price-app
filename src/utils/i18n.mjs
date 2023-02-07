@@ -6,7 +6,7 @@ const resources = {
     translation: {
       products: "Продукты",
       meatP: "Мясные продукты",
-      chocolate: "Шоколад",
+      choco: "Шоколад",
       softDrinks: "Безалкогольные напитки",
       discountProducts: "Товары со скидкой",
     },
@@ -15,7 +15,7 @@ const resources = {
     translation: {
       products: "Onumler",
       meatP: "Et Onumleri",
-      chocolate: "Shokolad",
+      choco: "Shokolad",
       softDrinks: "Alkogolsyz içgiler",
       discountProducts: "Arzanladyş önümleri",
     },
@@ -25,7 +25,7 @@ const resources = {
     translation: {
       meatP: "Meat Products",
       products: "Products",
-      chocolate: "Chocolate",
+      choco: "Chocolate",
       softDrinks: "Soft Drinks",
       discountProducts: "Discount Products",
     },
